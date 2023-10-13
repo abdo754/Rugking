@@ -31,3 +31,5 @@ add the model for the table but there is nothing wrong (i have not idea what is 
 i have figer thing out by going back to the mvcmoive exmple and stater all over again which is better 
 there is a promblem the of making the controller 
 i fix it beucase they was so mistake of spelling and also the place for it 
+Now i am make a SeedData in the model folder 
+add items in my list
