@@ -8,6 +8,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Rugking.Data;
+
 
 namespace Rugking
 {
@@ -24,6 +27,8 @@ namespace Rugking
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<RugkingContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("RugkingContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
